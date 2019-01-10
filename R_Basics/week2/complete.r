@@ -1,3 +1,7 @@
+##A function that takes a directory containing environmental data
+##and an interval representing the number of files to scan
+##scans the files and returns a dataframe that tells the number of
+##complete observations per environmental indicator per file
 complete <- function(directory, id = 1:332) {
   p <- paste(getwd(), '/', directory, sep = '') #store path in var p
   files <- list.files(path = p) #dump all the files in a vector

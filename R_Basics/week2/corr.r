@@ -1,3 +1,6 @@
+##A function that takes a directory containing environmental data
+##and a threshold for the number of complete observations
+##and returns a vector of correlations between environmental indicators
 corr <- function(directory, threshold = 0) {
   p <- paste(getwd(), '/', directory, sep = '') #store path in var p
   files <- list.files(path = p) #dump all the files in a vector
